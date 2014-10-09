@@ -1,0 +1,21 @@
+
+/* this CSS file extends the application CSS file found under common\css */
+
+body {
+	width: 100%;
+}
+
+.tabBar {
+	bottom: 0;
+	margin-top: 0;
+	top: initial !important;
+}
+
+table {
+	background-color: #D6EEFF
+}
+
+.blankrow {
+	background-color: #FFEEFF;
+	height: 10px;
+}

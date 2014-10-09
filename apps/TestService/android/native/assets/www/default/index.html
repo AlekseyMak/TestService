@@ -1,0 +1,56 @@
+<!DOCTYPE HTML><html>
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="UTF-8">
+        <title>TestService</title>
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" name="viewport">
+    		<!--
+    			<link rel="shortcut icon" href="images/favicon.png">
+    			<link rel="apple-touch-icon" href="images/apple-touch-icon.png"> 
+    		-->
+        <link href="worklight/worklight.css" rel="stylesheet">
+        <link href="jqueryMobile/jquery.mobile-1.4.2.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+        <script>
+		// Define WL namespace.
+		var WL = WL ? WL : {};
+		/**
+		 * WLClient configuration variables.
+		 * Values are injected by the deployer that packs the gadget.
+		 */
+		 WL.StaticAppProps = {
+   "APP_DISPLAY_NAME": "TestService",
+   "APP_ID": "TestService",
+   "APP_SERVICES_URL": "\/apps\/services\/",
+   "APP_VERSION": "1.0",
+   "ENVIRONMENT": "android",
+   "LOGIN_DISPLAY_TYPE": "embedded",
+   "WORKLIGHT_NATIVE_VERSION": "1388915884",
+   "WORKLIGHT_PLATFORM_VERSION": "6.2.0.00.20141002-1640",
+   "WORKLIGHT_ROOT_URL": "\/apps\/services\/api\/TestService\/android\/"
+};
+</script>
+		<script src="worklight/cordova.js"></script>
+		<script src="worklight/wljq.js"></script>
+		<script src="worklight/worklight.js"></script>
+		<script src="worklight/checksum.js"></script>
+		<script>window.$ = window.jQuery = WLJQ;</script>
+    		<script src="jqueryMobile/jquery.mobile-1.4.2.js"></script>
+    </head>
+    <body style="display: none;">
+        <div id="header">
+            <h1>SURP test</h1>
+        </div>	
+        <button id="getdata_btn" onclick="retrieveData()">retrieve data</button>
+			<button id="addUser" onclick="addEmployee(1, 'Иванов Иван');">Add User</button>
+			<button id="getTasks" onclick="getTasks(false);">getTasks</button>
+			<button id="getActiveTasks" onclick="getTasks(true);">getActiveTasks</button>
+        <div id="ResultDiv"></div>
+        <div data-role="content" id="pageContent">
+            <ul data-inset="true" data-role="listview" id="FeedsList"></ul>															
+        </div>
+        <script src="js/initOptions.js"></script>
+    		<script src="js/main.js"></script>
+    		<script src="js/messages.js"></script>
+    </body>
+</html>

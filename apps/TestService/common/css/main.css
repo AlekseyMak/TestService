@@ -1,0 +1,31 @@
+
+body {
+	margin: 0;
+	font-family: sans-serif;
+	background-color: #ffffff;
+}
+
+h1 {
+	margin: 0;
+	font-size: 18px;
+	font-family: inherit;
+}
+
+#header {
+	text-align: center;
+	background-color: #1D4D90;
+	color: #F9FAFB;
+	font-size: 16px;
+	height: 38px;
+	line-height: 38px;
+	border-bottom: 1px solid white;
+	width: 100%;
+}
+
+#FeedsList {
+	margin: 0;
+}
+
+.ui-header h3.ui-title {
+	margin: auto 15px auto auto;
+}
